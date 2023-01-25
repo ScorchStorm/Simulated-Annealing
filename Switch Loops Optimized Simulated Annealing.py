@@ -80,7 +80,7 @@ while T>Tmin:
 
     deltaD = A[r[i-1]][r[i]] + A[r[j-1]][r[j]] - A[r[i]][r[j]] - A[r[i-1]][r[j-1]] # Calculate the change in distance
 
-    if random()>=exp(-deltaD/T): # If the move accepted, make the changes
+    if random()>=exp(-deltaD/T): # If the move is accepted, make the changes
         if i < j:
             r = r[:i]+r[i:j][::-1]+r[j:]
         elif j < i:
